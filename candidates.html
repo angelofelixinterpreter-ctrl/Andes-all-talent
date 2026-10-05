@@ -1,110 +1,563 @@
-<form class="form-card"
-      action="https://formspree.io/f/xyekgqjr"
-      method="POST"
-      enctype="multipart/form-data">
+<!doctype html>
+<html lang="en">
 
-  <div class="form-grid">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div class="field">
-      <label>First Name *</label>
-      <input type="text" name="first_name" required>
+  <title>For Candidates | Andes AllTalent</title>
+
+  <meta
+    name="description"
+    content="Andes AllTalent connects U.S. companies with talented professionals across Latin America."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+
+    <a class="logo" href="index.html">
+      <span class="logo-mark"></span>
+      <span>ANDES <small>ALLTALENT</small></span>
+    </a>
+
+    <button class="menu-btn" aria-label="Menu">☰</button>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="companies.html">For Companies</a>
+      <a href="candidates.html">For Candidates</a>
+      <a href="process.html">Our Process</a>
+      <a href="industries.html">Industries</a>
+      <a href="about.html">About Us</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a class="nav-cta" href="companies.html">Find Talent →</a>
+
+  </div>
+</header>
+
+
+<main>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+
+      <span class="eyebrow">For Candidates</span>
+
+      <h1>Your Talent Can Go Further.</h1>
+
+      <p>
+        Join the Andes AllTalent network and be considered for international
+        professional opportunities that match your skills and experience.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- TALENT NETWORK -->
+  <section class="section section-cream">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <span class="eyebrow">Talent Network</span>
+
+        <h2>Join the Andes AllTalent Network</h2>
+
+        <p>
+          We're building a network of talented professionals across Latin America
+          who are ready for new opportunities.
+        </p>
+
+      </div>
+
+
+      <div class="grid-4">
+
+        <div class="card">
+          <div class="icon">↗</div>
+          <h3>International Opportunities</h3>
+          <p>
+            Discover opportunities with companies abroad.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">＋</div>
+          <h3>Professional Growth</h3>
+          <p>
+            Build experience working with international teams.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">◎</div>
+          <h3>Global Connections</h3>
+          <p>
+            Connect with companies looking for your skills.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">★</div>
+          <h3>Stay Connected</h3>
+          <p>
+            Remain in our network for future opportunities.
+          </p>
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="field">
-      <label>Last Name *</label>
-      <input type="text" name="last_name" required>
-    </div>
+  </section>
 
-    <div class="field">
-      <label>Email *</label>
-      <input type="email" name="email" required>
-    </div>
 
-    <div class="field">
-      <label>Phone / WhatsApp</label>
-      <input type="tel" name="phone">
-    </div>
+  <!-- CANDIDATE PROFILE FORM -->
+  <section class="section">
 
-    <div class="field">
-      <label>Country *</label>
-      <input type="text" name="country" required>
-    </div>
+    <div class="container form-wrap">
 
-    <div class="field">
-      <label>Current Position</label>
-      <input type="text" name="current_position">
-    </div>
+      <div>
 
-    <div class="field">
-      <label>Industry</label>
-      <select name="industry">
-        <option value="">Select industry</option>
-        <option value="Legal & Compliance">Legal & Compliance</option>
-        <option value="Technology & IT">Technology & IT</option>
-        <option value="Finance & Accounting">Finance & Accounting</option>
-        <option value="Customer Support">Customer Support</option>
-        <option value="Marketing & Creative">Marketing & Creative</option>
-        <option value="Human Resources">Human Resources</option>
-        <option value="Administrative & Operations">Administrative & Operations</option>
-        <option value="Sales & Business Development">Sales & Business Development</option>
-        <option value="Other">Other</option>
-      </select>
-    </div>
+        <span class="eyebrow">Candidate Profile</span>
 
-    <div class="field">
-      <label>Years of Experience</label>
-      <input type="number" name="years_of_experience" min="0">
-    </div>
+        <h2>Tell us about yourself.</h2>
 
-    <div class="field">
-      <label>English Level</label>
-      <select name="english_level">
-        <option value="">Select level</option>
-        <option value="Basic">Basic</option>
-        <option value="Intermediate">Intermediate</option>
-        <option value="Upper Intermediate">Upper Intermediate</option>
-        <option value="Advanced">Advanced</option>
-        <option value="Fluent">Fluent</option>
-      </select>
-    </div>
+        <p>
+          Your profile helps us understand your professional background
+          and identify opportunities that may fit.
+        </p>
 
-    <div class="field">
-      <label>LinkedIn Profile</label>
-      <input
-        type="url"
-        name="linkedin"
-        placeholder="https://linkedin.com/in/...">
-    </div>
+      </div>
 
-    <div class="field full">
-      <label>Key Skills</label>
-      <textarea name="key_skills"></textarea>
-    </div>
 
-    <div class="field full">
-      <label>CV</label>
-      <input
-        type="file"
-        name="cv"
-        accept=".pdf,.doc,.docx">
-    </div>
+      <!-- FORMSPREE -->
+      <form
+        class="form-card"
+        action="https://formspree.io/f/xyekgqjr"
+        method="POST"
+        enctype="multipart/form-data"
+      >
 
-    <div class="field full">
-      <label class="check">
+        <!-- Email subject -->
         <input
-          type="checkbox"
-          name="contact_consent"
-          value="Yes"
-          required>
-        I agree to be contacted regarding professional opportunities. *
-      </label>
+          type="hidden"
+          name="_subject"
+          value="New Candidate Application - Andes AllTalent"
+        >
+
+
+        <div class="form-grid">
+
+
+          <!-- FIRST NAME -->
+          <div class="field">
+
+            <label for="first_name">
+              First Name *
+            </label>
+
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              required
+            >
+
+          </div>
+
+
+          <!-- LAST NAME -->
+          <div class="field">
+
+            <label for="last_name">
+              Last Name *
+            </label>
+
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              required
+            >
+
+          </div>
+
+
+          <!-- EMAIL -->
+          <div class="field">
+
+            <label for="email">
+              Email *
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+            >
+
+          </div>
+
+
+          <!-- PHONE -->
+          <div class="field">
+
+            <label for="phone">
+              Phone / WhatsApp
+            </label>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+            >
+
+          </div>
+
+
+          <!-- COUNTRY -->
+          <div class="field">
+
+            <label for="country">
+              Country *
+            </label>
+
+            <input
+              type="text"
+              id="country"
+              name="country"
+              required
+            >
+
+          </div>
+
+
+          <!-- CURRENT POSITION -->
+          <div class="field">
+
+            <label for="current_position">
+              Current Position
+            </label>
+
+            <input
+              type="text"
+              id="current_position"
+              name="current_position"
+            >
+
+          </div>
+
+
+          <!-- INDUSTRY -->
+          <div class="field">
+
+            <label for="industry">
+              Industry
+            </label>
+
+            <select
+              id="industry"
+              name="industry"
+            >
+
+              <option value="">
+                Select industry
+              </option>
+
+              <option value="Legal & Compliance">
+                Legal & Compliance
+              </option>
+
+              <option value="Technology & IT">
+                Technology & IT
+              </option>
+
+              <option value="Finance & Accounting">
+                Finance & Accounting
+              </option>
+
+              <option value="Customer Support">
+                Customer Support
+              </option>
+
+              <option value="Marketing & Creative">
+                Marketing & Creative
+              </option>
+
+              <option value="Human Resources">
+                Human Resources
+              </option>
+
+              <option value="Administrative & Operations">
+                Administrative & Operations
+              </option>
+
+              <option value="Sales & Business Development">
+                Sales & Business Development
+              </option>
+
+              <option value="Other">
+                Other
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- EXPERIENCE -->
+          <div class="field">
+
+            <label for="years_of_experience">
+              Years of Experience
+            </label>
+
+            <input
+              type="number"
+              id="years_of_experience"
+              name="years_of_experience"
+              min="0"
+            >
+
+          </div>
+
+
+          <!-- ENGLISH LEVEL -->
+          <div class="field">
+
+            <label for="english_level">
+              English Level
+            </label>
+
+            <select
+              id="english_level"
+              name="english_level"
+            >
+
+              <option value="">
+                Select level
+              </option>
+
+              <option value="Basic">
+                Basic
+              </option>
+
+              <option value="Intermediate">
+                Intermediate
+              </option>
+
+              <option value="Upper Intermediate">
+                Upper Intermediate
+              </option>
+
+              <option value="Advanced">
+                Advanced
+              </option>
+
+              <option value="Fluent">
+                Fluent
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- LINKEDIN -->
+          <div class="field">
+
+            <label for="linkedin">
+              LinkedIn Profile
+            </label>
+
+            <input
+              type="url"
+              id="linkedin"
+              name="linkedin"
+              placeholder="https://linkedin.com/in/..."
+            >
+
+          </div>
+
+
+          <!-- KEY SKILLS -->
+          <div class="field full">
+
+            <label for="key_skills">
+              Key Skills
+            </label>
+
+            <textarea
+              id="key_skills"
+              name="key_skills"
+              rows="5"
+            ></textarea>
+
+          </div>
+
+
+          <!-- CV -->
+          <div class="field full">
+
+            <label for="cv">
+              CV
+            </label>
+
+            <input
+              type="file"
+              id="cv"
+              name="cv"
+              accept=".pdf,.doc,.docx"
+            >
+
+          </div>
+
+
+          <!-- CONSENT -->
+          <div class="field full">
+
+            <label class="check">
+
+              <input
+                type="checkbox"
+                id="contact_consent"
+                name="contact_consent"
+                value="Yes"
+                required
+              >
+
+              I agree to be contacted regarding professional
+              opportunities. *
+
+            </label>
+
+          </div>
+
+
+          <!-- SUBMIT -->
+          <div class="field full">
+
+            <button
+              class="btn btn-primary"
+              type="submit"
+            >
+              Join the Talent Network →
+            </button>
+
+          </div>
+
+
+        </div>
+
+      </form>
+
     </div>
 
-    <div class="field full">
-      <button class="btn btn-primary" type="submit">
-        Join the Talent Network →
-      </button>
+  </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+
+      <div>
+
+        <div class="logo">
+
+          <span class="logo-mark"></span>
+
+          <span>
+            ANDES <small>ALLTALENT</small>
+          </span>
+
+        </div>
+
+        <p>
+          Global Talent. Real Opportunities. Connecting U.S. companies
+          with professionals across Latin America.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>Company</h4>
+
+        <a href="companies.html">For Companies</a>
+        <a href="process.html">Our Process</a>
+        <a href="industries.html">Industries</a>
+        <a href="about.html">About Us</a>
+
+      </div>
+
+
+      <div>
+
+        <h4>Talent</h4>
+
+        <a href="candidates.html">For Candidates</a>
+        <a href="candidates.html">Talent Network</a>
+        <a href="resources.html">Resources</a>
+
+      </div>
+
+
+      <div>
+
+        <h4>Connect</h4>
+
+        <a href="contact.html">Contact</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © <span data-year></span> Andes AllTalent
+      </span>
+
+      <span>
+        Privacy Policy · Terms of Use
+      </span>
+
     </div>
 
   </div>
-</form>
+
+</footer>
+
+
+<div id="toast" class="toast"></div>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
