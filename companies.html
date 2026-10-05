@@ -1,29 +1,539 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>For Companies | Andes AllTalent</title><meta name="description" content="Andes AllTalent connects U.S. companies with talented professionals across Latin America.">
-<link rel="stylesheet" href="css/style.css"></head><body>
-<header class="site-header"><div class="container nav">
-<a class="logo" href="index.html"><span class="logo-mark"></span><span>ANDES <small>ALLTALENT</small></span></a>
-<button class="menu-btn" aria-label="Menu">☰</button>
-<nav class="nav-links"><a href="index.html">Home</a><a href="companies.html">For Companies</a><a href="candidates.html">For Candidates</a><a href="process.html">Our Process</a><a href="industries.html">Industries</a><a href="about.html">About Us</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a></nav>
-<a class="nav-cta" href="companies.html">Find Talent →</a></div></header>
-<main>
-<section class="page-hero"><div class="container"><span class="eyebrow">For Companies</span><h1>Build Your Team Across Borders.</h1><p>Tell us what you're looking for and we'll help you identify promising talent from Latin America.</p></div></section>
-<section class="section"><div class="container form-wrap"><div><span class="eyebrow">Request Talent</span><h2>Tell us who you're looking for.</h2><p>Share the essentials of your hiring need. This first version captures a lead; connect it to a secure CRM, email workflow or database before launch.</p><div class="card"><h3>What we can support</h3><p>Talent sourcing · Candidate identification · Initial screening · Skills review · English communication · Candidate matching</p></div></div>
-<form class="form-card" data-demo-form><div class="form-grid">
-<div class="field"><label>Company Name *</label><input required></div><div class="field"><label>Website</label><input type="url" placeholder="https://"></div>
-<div class="field"><label>Contact Name *</label><input required></div><div class="field"><label>Business Email *</label><input type="email" required></div>
-<div class="field"><label>Country *</label><input value="United States"></div><div class="field"><label>Industry</label><select><option>Select industry</option><option>Legal & Compliance</option><option>Technology & IT</option><option>Finance & Accounting</option><option>Customer Support</option><option>Marketing & Creative</option><option>Human Resources</option><option>Administrative & Operations</option><option>Sales & Business Development</option><option>Other</option></select></div>
-<div class="field"><label>Position Needed *</label><input required></div><div class="field"><label>Number of Positions</label><input type="number" min="1"></div>
-<div class="field"><label>Required Experience</label><input placeholder="e.g. 2–4 years"></div><div class="field"><label>English Requirement</label><select><option>Not specified</option><option>Intermediate</option><option>Upper Intermediate</option><option>Advanced</option><option>Fluent</option></select></div>
-<div class="field"><label>Work Model</label><select><option>Remote</option><option>Hybrid</option><option>On-site</option></select></div><div class="field"><label>Salary / Compensation Range</label><input></div>
-<div class="field full"><label>Tell us about the position</label><textarea placeholder="Responsibilities, must-have skills, preferred background, start date, etc."></textarea></div>
-<div class="field full"><button class="btn btn-primary" type="submit">Submit Hiring Request →</button></div></div><div class="notice">Demo form: no information is stored yet. Connect a secure backend before collecting real company data.</div></form></div></section>
-</main>
-<footer class="footer"><div class="container"><div class="footer-grid">
-<div><div class="logo"><span class="logo-mark"></span><span>ANDES <small>ALLTALENT</small></span></div><p>Global Talent. Real Opportunities. Connecting U.S. companies with professionals across Latin America.</p></div>
-<div><h4>Company</h4><a href="companies.html">For Companies</a><a href="process.html">Our Process</a><a href="industries.html">Industries</a><a href="about.html">About Us</a></div>
-<div><h4>Talent</h4><a href="candidates.html">For Candidates</a><a href="candidates.html">Talent Network</a><a href="resources.html">Resources</a></div>
-<div><h4>Connect</h4><a href="contact.html">Contact</a><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">YouTube</a></div>
-</div><div class="footer-bottom"><span>© <span data-year></span> Andes AllTalent</span><span>Privacy Policy · Terms of Use</span></div></div></footer>
-<div id="toast" class="toast"></div><script src="js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>For Companies | Andes AllTalent</title>
+
+  <meta
+    name="description"
+    content="Connect your company with qualified bilingual and multilingual talent across Latin America through Andes AllTalent."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="site-header">
+
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        Andes <span>AllTalent</span>
+      </a>
+
+      <button class="menu-btn" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="candidates.html">For Candidates</a>
+        <a href="companies.html" class="active">For Companies</a>
+        <a href="process.html">Our Process</a>
+        <a href="industries.html">Industries</a>
+        <a href="about.html">About Us</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <main>
+
+    <section class="page-hero">
+
+      <div class="container">
+
+        <span class="eyebrow">
+          FOR COMPANIES
+        </span>
+
+        <h1>
+          Find the Talent Your Business Needs
+        </h1>
+
+        <p>
+          Connect with qualified professionals across Latin America
+          and build the team your company needs to grow.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            TALENT SOLUTIONS
+          </span>
+
+          <h2>
+            Tell Us What You're Looking For
+          </h2>
+
+          <p>
+            Share your hiring requirements with our team.
+            We will review your needs and connect you with
+            qualified professionals who match your requirements.
+          </p>
+
+        </div>
+
+
+        <!-- COMPANY FORM -->
+
+        <div class="form-wrapper">
+
+          <form
+            id="company-form"
+            class="form-card"
+            action="https://formspree.io/f/xqpezvdo"
+            method="POST"
+          >
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Talent Request - Andes AllTalent"
+            >
+
+
+            <div class="form-section">
+
+              <h3>
+                Company Information
+              </h3>
+
+              <div class="form-grid">
+
+                <div class="form-group">
+
+                  <label for="company_name">
+                    Company Name *
+                  </label>
+
+                  <input
+                    type="text"
+                    id="company_name"
+                    name="company_name"
+                    placeholder="Company name"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="website">
+                    Company Website
+                  </label>
+
+                  <input
+                    type="url"
+                    id="website"
+                    name="website"
+                    placeholder="https://company.com"
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="contact_name">
+                    Contact Name *
+                  </label>
+
+                  <input
+                    type="text"
+                    id="contact_name"
+                    name="contact_name"
+                    placeholder="Your full name"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="email">
+                    Business Email *
+                  </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="name@company.com"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="country">
+                    Country *
+                  </label>
+
+                  <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    value="United States"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="industry">
+                    Industry *
+                  </label>
+
+                  <input
+                    type="text"
+                    id="industry"
+                    name="industry"
+                    placeholder="e.g. Legal, Healthcare, Technology"
+                    required
+                  >
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="form-section">
+
+              <h3>
+                Hiring Requirements
+              </h3>
+
+              <div class="form-grid">
+
+                <div class="form-group">
+
+                  <label for="position_needed">
+                    Position Needed *
+                  </label>
+
+                  <input
+                    type="text"
+                    id="position_needed"
+                    name="position_needed"
+                    placeholder="e.g. Legal Assistant"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="number_of_positions">
+                    Number of Positions *
+                  </label>
+
+                  <input
+                    type="number"
+                    id="number_of_positions"
+                    name="number_of_positions"
+                    min="1"
+                    placeholder="1"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="required_experience">
+                    Required Experience
+                  </label>
+
+                  <input
+                    type="text"
+                    id="required_experience"
+                    name="required_experience"
+                    placeholder="e.g. 2+ years"
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="english_requirement">
+                    English Requirement
+                  </label>
+
+                  <select
+                    id="english_requirement"
+                    name="english_requirement"
+                  >
+
+                    <option value="">
+                      Select level
+                    </option>
+
+                    <option value="Basic">
+                      Basic
+                    </option>
+
+                    <option value="Intermediate">
+                      Intermediate
+                    </option>
+
+                    <option value="Advanced">
+                      Advanced
+                    </option>
+
+                    <option value="Fluent / Bilingual">
+                      Fluent / Bilingual
+                    </option>
+
+                  </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="work_model">
+                    Work Model
+                  </label>
+
+                  <select
+                    id="work_model"
+                    name="work_model"
+                  >
+
+                    <option value="">
+                      Select option
+                    </option>
+
+                    <option value="Remote">
+                      Remote
+                    </option>
+
+                    <option value="Hybrid">
+                      Hybrid
+                    </option>
+
+                    <option value="On-site">
+                      On-site
+                    </option>
+
+                    <option value="Flexible">
+                      Flexible
+                    </option>
+
+                  </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="salary_range">
+                    Salary / Compensation Range
+                  </label>
+
+                  <input
+                    type="text"
+                    id="salary_range"
+                    name="salary_range"
+                    placeholder="e.g. $45,000 - $60,000"
+                  >
+
+                </div>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="position_details">
+                  Tell Us About the Position *
+                </label>
+
+                <textarea
+                  id="position_details"
+                  name="position_details"
+                  rows="7"
+                  placeholder="Tell us about the position, responsibilities, required skills, schedule, and any other important details."
+                  required
+                ></textarea>
+
+              </div>
+
+            </div>
+
+
+            <div class="form-actions">
+
+              <button
+                type="submit"
+                id="company-submit"
+                class="btn btn-primary"
+              >
+                Submit Hiring Request →
+              </button>
+
+              <p class="form-note">
+                Our team will review your request and contact you
+                to discuss the next steps.
+              </p>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHY ANDES ALLTALENT -->
+
+    <section class="section section-light">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            WHY ANDES ALLTALENT
+          </span>
+
+          <h2>
+            Talent Without Borders
+          </h2>
+
+          <p>
+            We help companies access professional talent across
+            Latin America while simplifying the hiring process.
+          </p>
+
+        </div>
+
+
+        <div class="cards-grid">
+
+          <div class="info-card">
+
+            <h3>
+              Qualified Talent
+            </h3>
+
+            <p>
+              Connect with professionals whose experience,
+              skills, and language capabilities match your needs.
+            </p>
+
+          </div>
+
+
+          <div class="info-card">
+
+            <h3>
+              Latin American Reach
+            </h3>
+
+            <p>
+              Access a growing network of professionals across
+              Latin America.
+            </p>
+
+          </div>
+
+
+          <div class="info-card">
+
+            <h3>
+              Personalized Matching
+            </h3>
+
+            <p>
+              We focus on understanding your requirements before
+              connecting you with potential candidates.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-content">
+
+      <div>
+
+        <strong>
+          Andes AllTalent
+        </strong>
+
+        <p>
+          Global Talent. Real Opportunities.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <p>
+          © <span data-year></span> Andes AllTalent.
+          All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
